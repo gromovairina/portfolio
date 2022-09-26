@@ -1,1 +1,1 @@
-https://github.com/gromovairina/portfolio
+https://github.com/gromovairina/portfolio-nails
