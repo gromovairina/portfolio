@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Архитектура бровей</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        
+          <div class="header__inner">
+            <div class="header__head">
+              <div class="header__logo logo">
+                <img src="images/index-header/logo.jpg" alt="" />
+              </div>
+              <div class="burger"><span></span></div>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li>
+                    <a href="index.html" class="nav__link">О&nbspнас</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav__li-list list-link">
+                      Обучение
+                      <span></span>
+                    </a>
+
+                    <ul class="nav__learn-list">
+                      <li>
+                        <a href="curse1-manicure-full.html" class="nav__link">Маникюр полный курс</a>
+                      </li>
+                      <li>
+                        <a href="curse2-manicure-apparat.html" class="nav__link">Аппаратный маникюр</a>
+                      </li>
+                      <li>
+                        <a href="curse3-manicure-comby.html" class="nav__link">
+                          Комбинированный маникюр
+                        </a>
+                      </li>
+                      <li><a href="curse4-french.html" class="nav__link">Идеальный френч</a></li>
+                      <li>
+                        <a href="curse5-extensions.html" class="nav__link">Наращивание ногтей</a>
+                      </li>
+                      <li><a href="curse6-pedicure.html" class="nav__link">Педикюр</a></li>
+                      <li><a href="curse7-eyelashes.html" class="nav__link">Ресницы</a></li>
+                      <li>
+                        <a href="curse8-eyebrowns.html" class="nav__link">Архитектура бровей</a>
+                      </li>
+                      <li>
+                        <a href="curse9-permanent.html" class="nav__link">Перманентный макияж</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="freelessons.html" class="nav__link">Бесплатные&nbspуроки</a>
+                  </li>
+                  <li>
+                    <a href="news.html" class="nav__link">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#contacts" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__contacts">
+                <div class="header__tel-icon">
+                  <img
+                    src="images/index-header/phone-icon.png"
+                    alt="Логотип телефон"
+                  />
+                </div>
+                <div class="header__tel">
+                  <a href="tel:88009999999">
+                    8(800)999-99-99
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__main header__main--curse8-eyebrowns">
+              <h1 class="title">Архитектура бровей</h1>
+              <h2 class="subtitle">
+                Создание формы бровей, уход за бровями
+              </h2>
+
+              <bottom class="header__button button">Записаться&nbspна&nbspкурс</bottom>
+            </div>
+            <div class="header__overlay"></div>
+          </div>
+        
+      </header>
+      <!--модальное окно с формой записи-->
+    <div class="popup" id="popup-appointment" >
+        <form class="modal-form" id="form-appointment" autocomplete="off">
+          <label class="input-signature">
+            Ваше имя
+            <input
+              class="input-text"
+              type="name"
+              name="name"
+              tabindex="1"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <label class="input-signature">
+            Ваш телефон
+  
+            <input
+              type="tel"
+              name="tel"
+              tabindex="2"
+              class="input-text"
+              id="tel"
+              autocomplete="off"
+              required
+            />
+          </label>
+  
+          <label class="input-signature">
+            Курс
+            <select name="curse" class="input-text">
+                <option value="manicureFull">Маникюр полный курс</option>
+                <option value="manicureApparat">Аппаратный маникюр</option>
+                <option value="manicureComby">Комбинированный маникюр</option>
+                <option value="french">Идеальный френч</option>
+                <option value="nailExtensions">Наращивание ногтей</option>
+                <option value="pedicure">Педикюр</option>
+                <option value="eyelashes">Ресницы</option>
+                <option value="eyebrows" selected>Архитектура бровей</option>
+                <option value="permanent">Перманентный макияж</option>
+              </select>
+            
+          </label>
+          <label class="input-signature">
+            Укажите желаемую дату начала курса. Мы предложим вам ближайший к этой дате вариант.
+            <input
+              type="text"
+              id="date"
+              name="date"
+              class="input-text"
+              tabindex="8"
+            />
+          </label>
+          <button type="submit" class="button-input">
+            Отправить
+          </button>
+        </form>
+        <div class="popup-close" id="popup-close-appointment">X</div>
+        <div class="form-overlay" id="form-overlay-appointment"></div>
+      </div>
+      <main class="main">
+       <section class="curse">
+        <div class="container">
+            <div class="curse__inner">
+                <div class="curse__row1"
+                data-aos-offset="100px"
+                data-aos="flip-right"
+                data-aos-once="true"
+                data-aos-delay="400">
+                    <div class="curse__image">
+                        <img src="images/index-instructors/instructor6.webp" alt="">
+                    </div>
+                    <div class="curse__text-inner">
+                        <div class="curse__name">Инструктор: Феоктистова Маргарита Юрьевна.</div>
+                        <div class="curse__time">Длительность: 5 дней.</div>
+                        <div class="curse__price">Стоимость: 10000р.</div>
+                    </div>
+                </div>
+                <div class="curse__row2 text"
+                data-aos-offset="100px"
+                data-aos="flip-left"
+                data-aos-once="true"
+                data-aos-delay="400">
+                    <div class="curse__program-name">Программа курса:</div>
+                    
+
+                    <ul class="curse__program-item">
+                        <li>Подготовка рабочего места мастера.</li>
+                        <li>Стерилизация инструментов и дезинфекция рабочей поверхности.</li>
+                        <li>Оксиды. Таблица смешивания.</li>
+                        <li>Осветление бровей, зачем и кому оно нужно.</li>
+                        <li>Хна для бровей. Как правильно с ней работать.</li>
+                        <li>Ваксинг. Виды воска. Работа с каждым из них.</li>
+                        <li>Анатомия бровей.</li>
+                        <li>Виды коррекции.</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </section>
+
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="container">
+          <footer class="footer__inner">
+<div class="footer__logo logo">  <img src="images/index-header/logo.jpg" alt="" /></div>
+<div class="footer__address text">
+  г. Хабаровск</br>
+  ул. Муравьева-Амурского
+</div>
+<div class="footer__time text">
+  пн-птн 9-20</br>
+  сб-вс 10-20
+</div>
+<div class="footer__links">
+  
+    
+      <a href="https://ok.ru" class="footer__link" target="blank"><img src="images/index-footer-soc/ok.jpg" alt="Иконка однокласники" />
+    
+  
+  
+    
+    <a href="skype:Skype_User?cal" class="footer__link" target="blank"><img src="images/index-footer-soc/skype.png" alt="Иконка скайп" /></a>
+  
+
+    
+ <a href=" https://vk.com/id*." class="footer__link" target="blank"><img src="images/index-footer-soc/vk.png" alt="Иконка в контакте" /></a>
+
+</div>
+          </footer>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/air-datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/iputmask.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
